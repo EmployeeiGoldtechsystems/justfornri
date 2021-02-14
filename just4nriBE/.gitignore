@@ -1,0 +1,10 @@
+target
+.settings
+/.classpath
+/.project
+/ProductsPortal.iml
+
+# Meant to carry sensitive key values which can be used for local development
+# but should not be checked in. Actual values would be populated in environment
+# using pipelines
+**/application-dev.properties

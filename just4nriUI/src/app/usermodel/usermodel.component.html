@@ -1,0 +1,42 @@
+<div>
+  <div>
+    <table width="70%">
+      <tr>
+        <!-- <th> </th> -->
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Whatsapp Number</th>
+      </tr>
+      <tr>
+        <!-- <td> </td> -->
+        <td><input [(ngModel)]="nriName"> </td>
+        <td><input [(ngModel)]="nriEmail"></td>
+        <td><input [(ngModel)]="nriPhone"></td>
+        <td><input [(ngModel)]="nriWhatsap"></td>
+        <td><button (click)="saveNri()">Save</button></td>
+      </tr>
+    </table>
+  </div>
+  <!-- <div style="margin: 15px;">
+    <table width="70%">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Whatsap Number</th>
+      </tr>
+      <ng-container *ngFor="let user of nriInfo">
+        <tr>
+          <td>{{user.id}}</td>
+          <td>{{user.name}}</td>
+          <td>{{user.email}}</td>
+          <td>{{user.phoneNo}}</td>
+          <td>{{user.whatsapNo}}</td>
+          <td><button (click)="deleteNri(user)">Delete</button></td>
+        </tr>
+      </ng-container>
+    </table>
+  </div> -->
+</div>

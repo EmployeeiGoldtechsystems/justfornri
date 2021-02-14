@@ -1,0 +1,26 @@
+<!-- <p>
+  adminmodel works!
+</p> -->
+<div style="margin: 15px;">
+  <table width="70%">
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone Number</th>
+      <th>Whatsap Number</th>
+      <th>Date Time created</th>
+    </tr>
+    <ng-container *ngFor="let user of nriInfo">
+      <tr>
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phoneNo}}</td>
+        <td>{{user.whatsapNo}}</td>
+        <td>{{user.createdDate}}</td>
+        <td><button (click)="deleteNri(user)">Delete</button></td>
+      </tr>
+    </ng-container>
+  </table>
+</div>
